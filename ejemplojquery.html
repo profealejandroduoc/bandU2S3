@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery ejemplo</title>
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ -->    
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("h1").click(function()
+            {
+                $("h1").fadeOut();
+            });
+
+        });
+
+
+        $(document).ready(function () {
+            $("#aparece").click(function () {  
+                $("h1").fadeIn();
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("h3").append("Hola desde Jquery")
+            $("h3").css("font-family","Verdana")
+        });
+    </script>
+    <div class="container mt-3">
+        <h1>Usando Jquery</h1>
+        <p>Es muy facil</p>
+        <p id="aparece">Haga click para aparecer</p>
+
+
+        <h3>
+
+        </h3>
+        <h3>Con otra cosa</h3>
+    </div>
+
+
+</body>
+
+</html>
